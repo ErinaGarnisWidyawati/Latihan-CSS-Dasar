@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Position dan Overflow</title>
+</head>
+<body>
+    <div class="container">
+        <p class="sticky">
+            Ini adalah contoh dari position sticky
+        </p>
+
+        <p class="static">
+            <b>Ini adalah contoh dari position static</b> <br>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+            Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, 
+            consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+            Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+            This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+            comes from a line in section 1.10.32.
+        </p>
+
+        <p class="relative">
+            <b>Ini adalah contoh dari position relative</b> <br>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+            Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, 
+            consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+            Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+            This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+            comes from a line in section 1.10.32.
+        </p>
+
+        <p class="absolute">
+            <b>Ini adalah contoh dari position absolute</b> <br>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+            Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, 
+            consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+            Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+            This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+            comes from a line in section 1.10.32.
+        </p>
+
+        <p class="fixed">
+            ini merupakan contoh dari position fixed
+        </p>
+    </div>
+</body>
+
+<style media="screen">
+    .container{
+        width: 50%;
+        height: 200px;
+        overflow: auto;
+        margin-left: 0 auto;
+    }
+    .static{ position: static; border: 2px solid blueviolet; }
+    .relative{
+        position: relative;
+        border: 2px solid greenyellow;
+        left: 20px;
+        bottom:0;
+    }
+    .absolute{ position: absolute; border: 2px solid magenta; left: 20px; bottom:40px;}
+    .fixed{ position: fixed; border: 2px solid black; bottom: 0; right: 0;}
+    .sticky{
+        position:sticky;
+        border:2px solid deeppink
+        top:0;
+        left:20px;
+        background: darkblue;
+        color:white;
+    }
+</style>
+</html>
